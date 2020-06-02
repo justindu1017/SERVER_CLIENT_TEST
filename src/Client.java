@@ -15,7 +15,7 @@ public class Client {
             InputStream inputStream = socket.getInputStream();
             DataInputStream dataInputStream = new DataInputStream(inputStream);
             System.out.println(dataInputStream.readUTF());
-
+            System.out.println("BYEBYE");
             socket.close();
         } catch (IOException e) {
             e.printStackTrace();
